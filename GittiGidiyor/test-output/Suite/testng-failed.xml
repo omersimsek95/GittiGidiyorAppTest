@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="gecerli_sifre" value="Omer1995"/>
+  <parameter name="gecerli_mail" value="omer.sim95@gmail.com"/>
+  <parameter name="aranacak_esya" value="bilgisayar"/>
+  <test thread-count="5" name="Giris(failed)">
+    <classes>
+      <class name="Test.GittiGidiyor.UrunSilme">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="basariliGiris"/>
+        </methods>
+      </class> <!-- Test.GittiGidiyor.UrunSilme -->
+      <class name="Test.GittiGidiyor.UrunAdedi">
+        <methods>
+          <include name="basariliGiris"/>
+          <include name="BeforeMethod"/>
+        </methods>
+      </class> <!-- Test.GittiGidiyor.UrunAdedi -->
+      <class name="Test.GittiGidiyor.SepeteEkleme">
+        <methods>
+          <include name="BeforeMethod"/>
+          <include name="basariliGiris"/>
+        </methods>
+      </class> <!-- Test.GittiGidiyor.SepeteEkleme -->
+      <class name="Test.GittiGidiyor.BasariliGiris">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="BeforeMethod"/>
+          <include name="BeforeTest"/>
+          <include name="basariliGiris"/>
+        </methods>
+      </class> <!-- Test.GittiGidiyor.BasariliGiris -->
+    </classes>
+  </test> <!-- Giris(failed) -->
+</suite> <!-- Failed suite [Suite] -->
